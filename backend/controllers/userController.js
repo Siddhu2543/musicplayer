@@ -1,7 +1,8 @@
 import User from "../models/userModel.js";
 import asyncHandler from 'express-async-handler'
 
-const setCors = (res) => {res.set('Access-Control-Allow-Origin', 'http://localhost:3000')}
+// const setCors = (res) => {res.set('Access-Control-Allow-Origin', 'http://localhost:3000')}
+const setCors = (res) => {res.set('Access-Control-Allow-Origin', '*')}
 
 export const getUsers = asyncHandler(async (req, res) => {
     setCors(res)
