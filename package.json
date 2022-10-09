@@ -9,7 +9,6 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm start\" \"npm run client\""
   },
-  "homepage": "https://myusername.github.io",
   "author": "",
   "license": "ISC",
   "type": "module",
