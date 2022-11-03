@@ -14,11 +14,15 @@
   "type": "module",
   "proxy": "http://localhost:5000",
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.10.9",
     "axios": "^0.27.2",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
     "jquery": "^3.6.1",
+    "moment-duration-format": "^2.3.2",
     "mongoose": "^6.6.1",
     "popper.js": "^1.16.1"
   },
