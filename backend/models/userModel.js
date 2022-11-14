@@ -2,12 +2,7 @@ import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
   {
-    firstName: {
-      type: String,
-      required: true,
-    },
-
-    lastName: {
+    name: {
       type: String,
       required: true,
     },
@@ -29,10 +24,29 @@ const userSchema = mongoose.Schema(
       required: true,
     },
 
-    isAdmin: {
-      type: Boolean,
-      required: true,
-      default: false,
+    favSongs: {
+      type: [String],
+      default: [],
+    },
+
+    favPlaylists: {
+      type: [String],
+      default: [],
+    },
+
+    favArtists: {
+      type: [String],
+      default: [],
+    },
+
+    lastQueue: {
+      type: String,
+      default: "",
+    },
+
+    history: {
+      type: [String],
+      default: [],
     },
   },
   {

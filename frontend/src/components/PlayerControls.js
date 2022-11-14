@@ -6,24 +6,33 @@ import NextSongButton from "./NextSongButton";
 import ShuffleButton from "./ShuffleButton";
 import LoopButton from "./LoopButton";
 import SongProgress from "./SongProgress";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const PlayerControls = (props) => {
   const [loopType, setLoopType] = useState(0);
+  const [elapsed, setElapsed] = useState(props.elapsed);
 
   const handleLoopButtonClick = () => {
     setLoopType((prev) => (prev = (prev + 1) % 3));
   };
+
+  useEffect(() => {
+    setElapsed(props.elapsed);
+  }, [props]);
 
   return (
     <Row>
       <Col xs={12}>
         <div className="d-flex flex-row justify-content-center">
           <div className="p-2 align-self-center">
-            <ShuffleButton />
+            <span onClick={props.handleShuffle}>
+              <ShuffleButton />
+            </span>
           </div>
           <div className="p-2 align-self-center">
-            <PreviousSongButton />
+            <span onClick={props.handlePrev}>
+              <PreviousSongButton />
+            </span>
           </div>
           <div className="p-2 align-self-center">
             <span onClick={props.onPlayControlButtonClick}>
@@ -31,7 +40,9 @@ const PlayerControls = (props) => {
             </span>
           </div>
           <div className="p-2 align-self-center">
-            <NextSongButton />
+            <span onClick={props.handleNext}>
+              <NextSongButton />
+            </span>
           </div>
           <div className="p-2 align-self-center">
             <span onClick={handleLoopButtonClick}>
@@ -41,7 +52,7 @@ const PlayerControls = (props) => {
         </div>
       </Col>
       <Col xs={12}>
-        <SongProgress duration={props.duration} />
+        <SongProgress duration={props.duration} elapsed={props.elapsed} />
       </Col>
     </Row>
   );

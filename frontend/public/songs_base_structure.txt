@@ -1,0 +1,46 @@
+Artist:
+	Arijit:
+		Khairiyat
+		Atak Gaya
+		Shayad
+		Raabata
+		Agar tum sath ho
+	Atif Aslam:
+		Tera hone laga hoon
+		Jeena Jeena
+		Tu jaane na
+		O saathi
+	Badshah:
+		Jugnu
+		Proper patola
+		Tareefan
+		Kamal
+		Paani paani
+	Guru Randhawa:
+		Nain ta heere
+		suit suit
+		lagdi lahore di
+		high rated gabru
+	Alan Walker:
+		Faded
+	Luis Fonsi:
+		Despacito
+	Justine Bieber:
+		Sorry
+Playlist:
+	Top Playlist:
+		Sorry
+		Despacito
+		Faded
+		Nain ta heere
+		khairiyat
+	Smooth Songs:
+		Atak Gaya
+		Raabata
+		O saathi
+	Dance Hits:
+		Suit
+		Lagdi Lahore di
+		Proper patola
+		kamal
+		paani paani

@@ -7,17 +7,13 @@ import PlaylistCardContainer from "./PlaylistCardContainer";
 import TracksCardContainer from "./TracksCardContainer";
 import ArtistsCardContainer from "./ArtistsCardContainer";
 
-const url = "http://localhost:5000/api/users/";
-
-const Home = () => {
+const History = () => {
   return (
     <div className="home">
       <div className="main">
-        <PlaylistCardContainer />
-        <TracksCardContainer />
-        <ArtistsCardContainer />
+        <h1>History</h1>
       </div>
     </div>
   );
 };
-export default Home;
+export default History;

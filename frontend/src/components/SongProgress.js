@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import SeekSlider from "./SeekSlider";
 
 const SongProgress = (props) => {
   const [duration, setDuration] = useState(props.duration);
-  const [elapsed, setElapsed] = useState(0);
+  const [elapsed, setElapsed] = useState(props.elapsed);
 
   const handleSeek = () => {
     const slider = document.getElementById("slider");
     setElapsed(() => slider.value);
+    const audio = document.querySelector("audio");
+    audio.currentTime = slider.value;
   };
 
   const getFullDurationInString = () => {
@@ -24,6 +26,11 @@ const SongProgress = (props) => {
 
     return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
   };
+
+  useEffect(() => {
+    setElapsed(props.elapsed);
+    setDuration(props.duration);
+  }, [props]);
 
   return (
     <Row className="duration-bar">
