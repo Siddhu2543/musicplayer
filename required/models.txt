@@ -1,0 +1,10 @@
+users - user details
+tracks - songs
+albums - collections of related songs
+playlists - collections of similar type of songs
+collections - users collections
+collections/playlists - users playlists
+collections/artists - users artists
+collections/albums - users albums
+collections/tracks - users songs
+genres - collections of similar type of playlists and songs

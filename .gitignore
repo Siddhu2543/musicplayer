@@ -23,8 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # extra
-required
 .prettierrc
-songs/
-covers/
-lyrics/

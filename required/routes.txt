@@ -1,0 +1,22 @@
+/ - Home
+/search - Search
+/collection
+	/playlists - liked playlists
+	/artists - liked artists
+	/albums - liked albums
+	/tracks - liked songs
+/playlist/:id - playlist
+/album/:id - album
+/track/:id - id
+/artist/:id - artist
+/genre/:id - genre
+/lyrics - lyrics
+/queue - queue
+/user/:id - profile
+/preferences - settings
+/signup - new user
+/signin - signin
+/signout - signout
+/top-playlists
+/top-tracks
+/history
